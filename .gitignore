@@ -1,0 +1,12 @@
+# Working notes for this build session — not a graded deliverable
+task_plan.md
+findings.md
+progress.md
+.planning/
+
+# Local hook config — not committed per program precedent
+.claude/
+
+# Python bytecode cache
+__pycache__/
+*.pyc

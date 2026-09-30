@@ -1,0 +1,64 @@
+{
+  "run_id": "run-2026-09-30",
+  "source_version": "SRC-D-3",
+  "case_clock": "2026-11-15T00:00:00+01:00",
+  "_case_clock_note": "Exercise fictional 'now', from the policy page (Case clock: 2026-11-15, Europe/Amsterdam; no DST in November so UTC+01:00). NOT the real fetch date below. All filing-deadline/staleness computation in this run uses this clock, not wall-clock time.",
+  "_source_version_note": "SRC-D-3 is the binder/workbook revision code the retained PDFs and workbook self-report in their own footers/notes. The policy page carries its own separate revision, POL-2026.2, recorded per-file below. Every one of the 307 review-ledger rows also cites a third code, DW-D-2 (underlying raw dataset revision, distinct from the exported SRC-D-3 binder) alongside POL-2026.2 and SRC-D-3 as a fixed 3-part citation bundle -- retained here for traceability, not fabricated.",
+  "files": [
+    {
+      "source_id": "SRC-1-policy",
+      "path": "artifacts/runs/run-2026-09-30/sources/policy.md",
+      "sha256": "8b120b7af432b575189bd06c85ae55fb9c07077f649caa1030a1d94636414141",
+      "status": "read",
+      "error": null,
+      "url": "https://private-pecorino-70e.notion.site/Project-D-Alderbridge-travel-reimbursement-policy-POL-2026-1-3d80b700541e81ed93ebd386abc1dcb0",
+      "locator": "Notion page, redirected live to https://private-pecorino-70e.notion.site/Project-D-Alderbridge-travel-reimbursement-policy-POL-2026-2-3d80b700541e81ed93ebd386abc1dcb0 (revision POL-2026.2) at fetch time; interview-supplied link named revision POL-2026-1",
+      "observed_at": "2026-09-30T15:53:00Z",
+      "version": "POL-2026.2"
+    },
+    {
+      "source_id": "SRC-2-claims-initial",
+      "path": "artifacts/runs/run-2026-09-30/sources/claims-initial.pdf",
+      "sha256": "b42a28754b1877363e1a25ed4fa1f3865915f44ec9995f7ed15fc9b6eefb08b7",
+      "status": "read",
+      "error": null,
+      "url": "https://drive.google.com/file/d/13sRj6s_kMeP1hsYGstWWmfkb6SCN1YOS/view",
+      "locator": "Google Drive PDF, filename claims-initial.pdf, 120 pages, one claim revision per page (C01-C121, all revision 1, arrival batch 1)",
+      "observed_at": "2026-09-30T15:53:00Z",
+      "version": "SRC-D-3"
+    },
+    {
+      "source_id": "SRC-3-claims-updates",
+      "path": "artifacts/runs/run-2026-09-30/sources/claims-updates.pdf",
+      "sha256": "03c15787d18e2928457cd0164b573dc03a3baade0ed26a391ba79c73a568da3b",
+      "status": "read",
+      "error": null,
+      "url": "https://drive.google.com/file/d/16829RwrGrMCK9oq5TnWuytFewGk_8xQP/view",
+      "locator": "Google Drive PDF, filename claims-updates.pdf, 7 pages: C09 rev2, C19 rev2, C24 rev1 (new claim), C18 rev2, C12 rev2, C121 rev2 (arrival batch 3); C19 rev3 (arrival batch 4)",
+      "observed_at": "2026-09-30T15:54:00Z",
+      "version": "SRC-D-3"
+    },
+    {
+      "source_id": "SRC-4-receipts",
+      "path": "artifacts/runs/run-2026-09-30/sources/receipts.pdf",
+      "sha256": "4c3dc47f187ccc5cdd0112e18afaadd3b6363bbb4d96793205ef8f3d4c06fcc8",
+      "status": "read",
+      "error": null,
+      "url": "https://drive.google.com/file/d/1Ynn1VLH-faRIy91xy95rOWwCBhy5mjjM/view",
+      "locator": "Google Drive PDF, filename receipts.pdf, 102 pages, one electronic expense receipt per page",
+      "observed_at": "2026-09-30T15:54:00Z",
+      "version": "SRC-D-3"
+    },
+    {
+      "source_id": "SRC-5-travel-registers",
+      "path": "artifacts/runs/run-2026-09-30/sources/travel-registers.xlsx",
+      "sha256": "f9a070080c3ef23bb7927d44f0508b8398afe0fb84deac27aa3e3076c0708f0e",
+      "status": "read",
+      "error": null,
+      "url": "https://docs.google.com/spreadsheets/d/1338nvKD6rgAdLgGRhYCMMlQyDNLK0sE8pvFWrZAaaxg/edit",
+      "locator": "Google Sheets workbook, exported as Microsoft Excel (.xlsx) to retain all 10 tabs: People, Trips, Merchant payments, FX, Caps, Budget, Review ledger, Review packets, Finance activity, Travel cancellations",
+      "observed_at": "2026-09-30T15:55:00Z",
+      "version": "SRC-D-3"
+    }
+  ]
+}

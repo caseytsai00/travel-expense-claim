@@ -1,0 +1,1954 @@
+{
+  "generated_from_batch": "batch-4",
+  "groups": {
+    "missing_receipt": [
+      {
+        "subject_type": "claim",
+        "subject_id": "C02",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-02",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-01",
+        "next_action": "No receipt on file for COST-02",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C04",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-04",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-02",
+        "next_action": "No receipt on file for COST-04",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C06",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-06",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-01",
+        "next_action": "No receipt on file for COST-06",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C09",
+        "revision": 2,
+        "missing_fact_or_reason": "No receipt on file for COST-09B",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-01",
+        "next_action": "No receipt on file for COST-09B",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C12",
+        "revision": 2,
+        "missing_fact_or_reason": "No receipt on file for COST-12",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-01",
+        "next_action": "No receipt on file for COST-12",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C16",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-16",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-01",
+        "next_action": "No receipt on file for COST-16",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C20",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-20",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-01",
+        "next_action": "No receipt on file for COST-20",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C27",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-27-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-27-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C28",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-28-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-28-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C29",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-29-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-29-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C30",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-30-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-30-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C31",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-31-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-31-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C32",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-32-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-32-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C33",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-33-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-04",
+        "next_action": "No receipt on file for COST-33-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C34",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-34-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-04",
+        "next_action": "No receipt on file for COST-34-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C35",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-35-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-04",
+        "next_action": "No receipt on file for COST-35-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C36",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-36-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-04",
+        "next_action": "No receipt on file for COST-36-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C37",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-37-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-04",
+        "next_action": "No receipt on file for COST-37-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C38",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-38-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-04",
+        "next_action": "No receipt on file for COST-38-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C39",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-39-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-05",
+        "next_action": "No receipt on file for COST-39-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C40",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-40-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-05",
+        "next_action": "No receipt on file for COST-40-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C41",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-41-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-05",
+        "next_action": "No receipt on file for COST-41-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C42",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-42-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-05",
+        "next_action": "No receipt on file for COST-42-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C43",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-43-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-05",
+        "next_action": "No receipt on file for COST-43-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C44",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-44-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-05",
+        "next_action": "No receipt on file for COST-44-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C45",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-45-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-06",
+        "next_action": "No receipt on file for COST-45-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C46",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-46-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-06",
+        "next_action": "No receipt on file for COST-46-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C47",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-47-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-06",
+        "next_action": "No receipt on file for COST-47-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C48",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-48-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-06",
+        "next_action": "No receipt on file for COST-48-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C49",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-49-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-06",
+        "next_action": "No receipt on file for COST-49-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C50",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-50-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-06",
+        "next_action": "No receipt on file for COST-50-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C51",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-51-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-07",
+        "next_action": "No receipt on file for COST-51-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C52",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-52-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-07",
+        "next_action": "No receipt on file for COST-52-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C53",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-53-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-07",
+        "next_action": "No receipt on file for COST-53-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C54",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-54-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-07",
+        "next_action": "No receipt on file for COST-54-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C55",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-55-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-07",
+        "next_action": "No receipt on file for COST-55-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C56",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-56-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-07",
+        "next_action": "No receipt on file for COST-56-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C57",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-57-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-08",
+        "next_action": "No receipt on file for COST-57-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C58",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-58-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-08",
+        "next_action": "No receipt on file for COST-58-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C59",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-59-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-08",
+        "next_action": "No receipt on file for COST-59-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C60",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-60-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-08",
+        "next_action": "No receipt on file for COST-60-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C61",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-61-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-08",
+        "next_action": "No receipt on file for COST-61-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C62",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-62-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-08",
+        "next_action": "No receipt on file for COST-62-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C63",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-63-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-09",
+        "next_action": "No receipt on file for COST-63-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C64",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-64-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-09",
+        "next_action": "No receipt on file for COST-64-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C65",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-65-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-09",
+        "next_action": "No receipt on file for COST-65-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C66",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-66-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-09",
+        "next_action": "No receipt on file for COST-66-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C67",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-67-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-09",
+        "next_action": "No receipt on file for COST-67-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C68",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-68-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-09",
+        "next_action": "No receipt on file for COST-68-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C69",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-69-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-10",
+        "next_action": "No receipt on file for COST-69-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C70",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-70-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-10",
+        "next_action": "No receipt on file for COST-70-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C71",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-71-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-10",
+        "next_action": "No receipt on file for COST-71-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C72",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-72-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-10",
+        "next_action": "No receipt on file for COST-72-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C73",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-73-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-10",
+        "next_action": "No receipt on file for COST-73-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C74",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-74-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-10",
+        "next_action": "No receipt on file for COST-74-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C75",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-75-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-11",
+        "next_action": "No receipt on file for COST-75-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C76",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-76-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-11",
+        "next_action": "No receipt on file for COST-76-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C77",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-77-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-11",
+        "next_action": "No receipt on file for COST-77-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C78",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-78-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-11",
+        "next_action": "No receipt on file for COST-78-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C79",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-79-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-11",
+        "next_action": "No receipt on file for COST-79-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C80",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-80-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-11",
+        "next_action": "No receipt on file for COST-80-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C81",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-81-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-12",
+        "next_action": "No receipt on file for COST-81-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C82",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-82-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-12",
+        "next_action": "No receipt on file for COST-82-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C83",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-83-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-12",
+        "next_action": "No receipt on file for COST-83-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C84",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-84-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-12",
+        "next_action": "No receipt on file for COST-84-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C85",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-85-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-12",
+        "next_action": "No receipt on file for COST-85-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C86",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-86-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-12",
+        "next_action": "No receipt on file for COST-86-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C87",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-87-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-13",
+        "next_action": "No receipt on file for COST-87-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C88",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-88-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-13",
+        "next_action": "No receipt on file for COST-88-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C89",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-89-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-13",
+        "next_action": "No receipt on file for COST-89-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C90",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-90-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-13",
+        "next_action": "No receipt on file for COST-90-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C91",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-91-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-13",
+        "next_action": "No receipt on file for COST-91-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C92",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-92-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-13",
+        "next_action": "No receipt on file for COST-92-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C93",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-93-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-14",
+        "next_action": "No receipt on file for COST-93-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C94",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-94-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-14",
+        "next_action": "No receipt on file for COST-94-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C95",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-95-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-14",
+        "next_action": "No receipt on file for COST-95-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C96",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-96-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-14",
+        "next_action": "No receipt on file for COST-96-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C97",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-97-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-14",
+        "next_action": "No receipt on file for COST-97-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C98",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-98-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-14",
+        "next_action": "No receipt on file for COST-98-2",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C100",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-100-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-100-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C102",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-102-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-102-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C104",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-104-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-104-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C106",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-106-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-106-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C108",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-108-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-108-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C109",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-109-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-109-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C110",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-110-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-110-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C115",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-115-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-115-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C119",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-119-1",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-03",
+        "next_action": "No receipt on file for COST-119-1",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C120",
+        "revision": 1,
+        "missing_fact_or_reason": "No receipt on file for COST-120-2",
+        "fact_type": "missing_receipt",
+        "owner": "EMP-04",
+        "next_action": "No receipt on file for COST-120-2",
+        "source_batch": "batch-4"
+      }
+    ],
+    "payment_anomaly": [
+      {
+        "subject_type": "claim",
+        "subject_id": "C02",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 54000 EUR-cents net paid against C02 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-02",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C04",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 10000 EUR-cents net paid against C04 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-04",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C06",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 100001 EUR-cents net paid against C06 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-06",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C09",
+        "revision": 2,
+        "missing_fact_or_reason": "Finance recorded 8000 EUR-cents net paid against C09 revision 2, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-09B",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C12",
+        "revision": 2,
+        "missing_fact_or_reason": "Finance recorded 7000 EUR-cents net paid against C12 revision 2, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-12",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C16",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 10000 EUR-cents net paid against C16 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-16",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C18",
+        "revision": 2,
+        "missing_fact_or_reason": "Finance recorded 10000 EUR-cents net paid against C18 revision 2, but that revision is currently 'pending' (not closed-reimbursed) -- Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C20",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 10000 EUR-cents net paid against C20 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-20",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C27",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C27 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-27-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C28",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C28 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-28-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C29",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C29 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-29-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C30",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C30 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-30-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C31",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C31 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-31-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C32",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C32 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-32-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C33",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C33 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-33-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C34",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C34 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-34-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C35",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C35 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-35-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C36",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C36 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-36-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C37",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C37 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-37-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C38",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C38 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-38-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C39",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C39 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-39-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C40",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C40 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-40-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C41",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C41 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-41-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C42",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C42 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-42-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C43",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C43 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-43-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C44",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C44 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-44-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C45",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C45 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-45-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C46",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C46 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-46-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C47",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C47 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-47-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C48",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C48 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-48-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C49",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C49 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-49-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C50",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C50 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-50-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C51",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C51 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-51-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C52",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C52 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-52-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C53",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C53 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-53-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C54",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C54 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-54-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C55",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C55 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-55-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C56",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C56 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-56-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C57",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C57 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-57-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C58",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C58 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-58-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C59",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C59 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-59-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C60",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C60 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-60-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C61",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C61 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-61-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C62",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C62 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-62-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C63",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C63 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-63-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C64",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C64 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-64-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C65",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C65 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-65-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C66",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C66 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-66-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C67",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C67 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-67-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C68",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C68 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-68-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C69",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C69 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-69-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C70",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C70 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-70-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C71",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C71 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-71-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C72",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C72 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-72-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C73",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C73 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-73-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C74",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C74 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-74-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C75",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C75 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-75-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C76",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C76 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-76-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C77",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C77 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-77-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C78",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C78 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-78-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C79",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C79 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-79-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C80",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C80 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-80-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C81",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C81 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-81-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C82",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C82 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-82-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C83",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C83 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-83-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C84",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C84 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-84-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C85",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C85 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-85-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C86",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C86 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-86-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C87",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C87 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-87-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C88",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C88 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-88-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C89",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C89 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-89-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C90",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C90 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-90-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C91",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C91 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-91-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C92",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C92 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-92-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C93",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 3500 EUR-cents net paid against C93 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-93-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C94",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4500 EUR-cents net paid against C94 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-94-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C95",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 5500 EUR-cents net paid against C95 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-95-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C96",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 6500 EUR-cents net paid against C96 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-96-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C97",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C97 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-97-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C98",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 8500 EUR-cents net paid against C98 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-98-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C100",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 100000 EUR-cents net paid against C100 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-100-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C102",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 14999 EUR-cents net paid against C102 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-102-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C104",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 15000 EUR-cents net paid against C104 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-104-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C106",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 4000 EUR-cents net paid against C106 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-106-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C108",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 208 EUR-cents net paid against C108 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-108-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C109",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 208 EUR-cents net paid against C109 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-109-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C110",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 2500 EUR-cents net paid against C110 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-110-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C115",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 1500 EUR-cents net paid against C115 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-115-1",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C120",
+        "revision": 1,
+        "missing_fact_or_reason": "Finance recorded 7500 EUR-cents net paid against C120 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-120-2",
+        "fact_type": "payment_anomaly",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
+        "source_batch": "batch-4"
+      }
+    ],
+    "awaiting_initial_review": [
+      {
+        "subject_type": "claim",
+        "subject_id": "C08",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C10",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C13",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C15",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C18",
+        "revision": 2,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C22",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C23",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C25",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C26",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C112",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C113",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C114",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C116",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C117",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      },
+      {
+        "subject_type": "claim",
+        "subject_id": "C118",
+        "revision": 1,
+        "missing_fact_or_reason": "Awaiting review from: administration, budget_owner, supervisor",
+        "fact_type": "awaiting_initial_review",
+        "owner": "administration",
+        "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      }
+    ],
+    "business_hold_returned": [
+      {
+        "subject_type": "claim",
+        "subject_id": "C21",
+        "revision": 1,
+        "missing_fact_or_reason": "LEAD-01 (budget_owner) returned: Budget owner requests a funding review before committing.",
+        "fact_type": "business_hold_returned",
+        "owner": "LEAD-01",
+        "next_action": "LEAD-01 (budget_owner) returned: Budget owner requests a funding review before committing.",
+        "source_batch": "batch-4"
+      }
+    ]
+  },
+  "total_items": 194
+}
