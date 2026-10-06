@@ -99,6 +99,20 @@ def resolve_claim_line(
         return ("unresolved", None, "; ".join(mismatches), source_ids)
 
     category = receipt["category"]
+    if category not in pr.KNOWN_RECEIPT_CATEGORIES:
+        # Policy's own words: "An unknown category, missing evidence,
+        # missing rate or missing applicable cap is unresolved, never an
+        # assumed zero" -- this is an explicit, documented rule, not a gap
+        # requiring escalation. Held unresolved like any other evidence-type
+        # gap; never silently defaulted to the transport/conference
+        # no-cap-needed path or any other category's formula.
+        return (
+            "unresolved",
+            None,
+            f"Unknown category '{category}' for {cost_id} (not one of the 5 documented in "
+            f"POL-2026.2); per policy, unresolved, never assumed zero",
+            source_ids,
+        )
     if category == "personal":
         return ("excluded", 0, "Personal purchase has zero entitlement", source_ids)
 

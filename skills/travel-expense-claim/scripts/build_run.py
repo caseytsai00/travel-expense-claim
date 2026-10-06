@@ -108,12 +108,12 @@ def build(sources_json_path):
 
 
 def _repo_relative(path):
-    path = Path(path).resolve()
-    # repo root is 3 levels above artifacts/runs/<run-id>/...
-    cur = path
-    while cur.name != "travel-expense-claim" and cur.parent != cur:
-        cur = cur.parent
-    return path.relative_to(cur)
+    # Repo root relative to THIS script's fixed location
+    # (skills/travel-expense-claim/scripts/), not by matching a directory
+    # name in the path -- a name match breaks under any git worktree, where
+    # the checkout is nested under a same-named ancestor directory.
+    repo_root = SCRIPT_DIR.parent.parent.parent
+    return Path(path).resolve().relative_to(repo_root)
 
 
 def current_revision(revs, as_of_batch):
@@ -350,6 +350,12 @@ def compute_batch_snapshot(
             status = "held"
             unresolved_reasons = [l["reason"] for l in line_results if l["status"] == "unresolved"]
             reason = "; ".join(unresolved_reasons)
+            # Policy explicitly groups "unknown category" with the other
+            # evidence-type gaps ("An unknown category, missing evidence,
+            # missing rate or missing applicable cap is unresolved, never
+            # an assumed zero" -- policy.md) rather than singling it out, so
+            # it is owned the same way: the employee, who can correct a
+            # miscoded receipt or supply the missing evidence.
             next_owner = employee
         else:
             allowed_cents_out = total_allowed

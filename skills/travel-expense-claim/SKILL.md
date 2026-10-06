@@ -130,12 +130,21 @@ present in the source data, not an error condition.
 
 - **A source fails to fetch:** record it in `sources.json` with
   `status: "unavailable"`, the attempted url/locator/time, `error` set, and
-  `path`/`sha256`/`version` left `null`. Do not substitute a bundled or
-  prior-run copy silently -- either retry the fetch or hand off with the gap
-  explicit in `report.md`.
-- **A source parses but a record is malformed** (unrecognized category,
-  missing required field): the affected line/claim becomes `unresolved` with
-  a reason naming the exact gap, never silently dropped or assumed zero.
+  `path`/`sha256`/`version` left `null`. `build_run.py` checks every file's
+  `status` before parsing anything and hard-exits (nonzero, no batch sealed)
+  if any is not `"read"`, naming the exact source(s) and recorded error. Do
+  not substitute a bundled or prior-run copy silently -- either retry the
+  fetch or hand off with the gap explicit in `report.md`.
+- **A receipt uses a category outside the 5 POL-2026.2 documents** (see
+  `references/data-shapes.md`): policy's own text already covers this --
+  "An unknown category ... is unresolved, never an assumed zero" --
+  `engine.resolve_claim_line` holds the line `unresolved` with that exact
+  reason rather than falling through to another category's cap formula.
+  Surfaces as its own `unknown_category` work-queue group for visibility,
+  owned the same as any other evidence-type gap.
+- **A source parses but a record is malformed otherwise** (missing required
+  field): the affected line/claim becomes `unresolved` with a reason naming
+  the exact gap, never silently dropped or assumed zero.
 - **A rerun of the same sources.json is expected to be byte-identical**
   (verified for this run -- see README.md "Verify"). If a rerun would change
   sealed batch content (new source data, a code fix), start a new `run_id`

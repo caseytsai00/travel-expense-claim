@@ -43,6 +43,7 @@ def write_claims_csv(final_snapshot, run_dir):
 
 
 MISSING_FACT_GROUPS = [
+    ("unknown_category", "Unknown category"),
     ("payment_anomaly", "Finance recorded"),
     ("missing_receipt", "No receipt on file for"),
     ("missing_merchant_proof", "No settled merchant payment proof for"),
@@ -189,6 +190,27 @@ def write_report(run_id, batches, final_snapshot, wq, run_dir, sources_manifest)
     lines.append(f"Final batch: `{final_snapshot['batch_id']}` (of {len(batches)} sealed batches). ")
     lines.append(f"Source binding: `{final_snapshot['source_binding']['path']}` "
                  f"(sha256 `{final_snapshot['source_binding']['sha256'][:16]}...`).\n")
+
+    predecessor_run_id = sources_manifest.get("predecessor_run_id")
+    if predecessor_run_id:
+        lines.append("## Why this run exists: predecessor link and correction\n")
+        lines.append(
+            f"This run supersedes `{predecessor_run_id}` (predecessor; see its own "
+            f"`report.md`/`sources.json`)."
+            + (f" {sources_manifest['_correction_note']}" if sources_manifest.get("_correction_note") else "")
+        )
+        lines.append("")
+
+    unknown_category_items = wq["groups"].get("unknown_category", [])
+    if unknown_category_items:
+        lines.append("## ⚠ Unknown expense category\n")
+        lines.append(
+            f"**{len(unknown_category_items)} line(s)** use an expense category outside the 5 "
+            "POL-2026.2 documents. Per policy's own wording (\"An unknown category ... is "
+            "unresolved, never an assumed zero\"), these are held, not guessed at -- see the "
+            "`unknown_category` group in `work_queue.json`."
+        )
+        lines.append("")
 
     if payment_anomalies:
         lines.append("## ⚠ Lead finding: payments recorded against unreviewed/unsupported claims\n")

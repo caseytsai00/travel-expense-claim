@@ -24,6 +24,15 @@ FILING_WINDOW_MONTHS = 2
 #  review actual reimbursement."
 BASE_REQUIRED_ROLES = ("administration", "budget_owner", "supervisor")
 
+# POL-2026.2 defines cost-treatment formulas for exactly these 5 categories
+# (see "Category: <transport|conference|lodging|meals|personal>" in
+# references/data-shapes.md). Policy's own text already covers anything
+# outside this set: "An unknown category ... is unresolved, never an
+# assumed zero" -- so engine.resolve_claim_line holds it unresolved rather
+# than falling through to transport/conference's no-cap formula or any
+# other category's cap lookup by accident.
+KNOWN_RECEIPT_CATEGORIES = frozenset({"transport", "conference", "lodging", "meals", "personal"})
+
 
 def parse_date(s):
     if not s:

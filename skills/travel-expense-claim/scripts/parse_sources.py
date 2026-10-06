@@ -214,6 +214,21 @@ def load_workbook(manifest, run_root):
 
 def load_all(sources_json_path):
     manifest = load_sources_manifest(sources_json_path)
+    # Hard failure: refuse to parse anything, and seal no batch, if any
+    # source isn't fully retained. Never substitute a bundled/prior-run copy
+    # silently -- surface the exact gap and stop before touching the rest.
+    unavailable = [f for f in manifest["files"] if f.get("status") != "read"]
+    if unavailable:
+        details = "; ".join(
+            f"{f['source_id']} (status={f.get('status')!r}, error={f.get('error') or 'none recorded'})"
+            for f in unavailable
+        )
+        raise SystemExit(
+            f"Hard failure: {len(unavailable)} source(s) in {sources_json_path} are not "
+            f"status 'read' -- {details}. Refusing to seal a batch from incomplete sources. "
+            f"Retry the fetch for the failed source(s) (or escalate the gap in report.md if "
+            f"it cannot be resolved) before rerunning build_run.py."
+        )
     run_root = Path(sources_json_path).parent
     policy_source_id, policy_text = load_policy_text(manifest, run_root)
     claim_pages = load_claim_pages(manifest, run_root)

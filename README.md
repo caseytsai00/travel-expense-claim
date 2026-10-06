@@ -6,6 +6,12 @@ monetary review, human decisions, reimbursement reconciliation and closure,
 corrections, and independent trip/permit cancellations -- including
 cancellations with no claim attached. Company and records are fictional.
 
+**Current run:** `artifacts/runs/run-2026-10-06/` (supersedes
+`run-2026-09-30/`, kept as its predecessor -- `run-2026-10-06/report.md`
+explains why: a source-completeness correction to `policy.md`, with no
+change to computed claims/obligations. See that report's "Why this run
+exists" section.)
+
 ## Start
 
 1. Read the [full Project D task](https://private-pecorino-70e.notion.site/Travel-expense-claim-Task-and-submission-3da0b700541e81249039eff895f77c98) for the scope, workflow and deliverables.
@@ -82,35 +88,59 @@ items in `work_queue.json` and `report.md`'s "Outstanding obligations" /
 fetched, a script exception) stops the run before any batch is sealed --
 nothing partial gets written as if it were complete.
 
+- **A source failed to fetch** (`sources.json` has any `status` other than
+  `"read"`): `build_run.py` refuses to parse anything and exits non-zero
+  before sealing any batch, naming the exact source(s) and recorded error.
+  It never substitutes a bundled or prior-run copy silently. Verified with a
+  synthetic `sources.json` (one source flipped to `unavailable`) -- not
+  exercised by this run's real sources, which all fetched cleanly.
+- **A receipt uses a category outside the 5 POL-2026.2 documents** (see
+  `references/data-shapes.md`): policy's own text already covers this --
+  "An unknown category ... is unresolved, never an assumed zero" -- so the
+  line is held `unresolved` with that exact reason, same ownership as any
+  other evidence-type gap, and surfaced in its own `unknown_category`
+  work-queue group for visibility. Never silently defaulted to another
+  category's cap formula. Verified with a synthetic receipt category -- not
+  exercised by this run's real data, whose 200 claim lines are all within
+  the 5 documented categories.
+
 ### Replay
 
 Rerunning `build_run.py`/`write_outputs.py` against an unchanged
 `sources.json` and its retained files reproduces byte-identical output
-(verified for `run-2026-09-30` -- see "Verify" below). If a rerun would
-change sealed content (new source data, a code fix), give it a **new**
-`run_id` and note the link back to the prior run's final batch in the new
-run's `report.md` -- never overwrite a sealed batch in place.
+(verified for both `run-2026-09-30` and `run-2026-10-06` -- see "Verify"
+below). If a rerun would change sealed content (new source data, a code
+fix), give it a **new** `run_id` and note the link back to the prior run's
+final batch in the new run's `report.md` -- never overwrite a sealed batch
+in place. `run-2026-10-06` is exactly this case: see its `report.md` for the
+predecessor link and what the correction did/didn't change.
 
 ## Verify
 
 ```bash
-# Schema-validate every sealed batch
+# Schema-validate every sealed batch (current run)
 python3 -c "
 import json, jsonschema
 schema = json.load(open('snapshot.schema.json'))
-for b in sorted(__import__('pathlib').Path('artifacts/runs/run-2026-09-30/batches').glob('batch-*.json'),
+for b in sorted(__import__('pathlib').Path('artifacts/runs/run-2026-10-06/batches').glob('batch-*.json'),
                  key=lambda p: int(p.stem.split('-')[1])):
     jsonschema.validate(json.load(open(b)), schema)
     print(b, 'VALID')
 "
 
 # Replay determinism: rerun and diff against the committed output
-cp -r artifacts/runs/run-2026-09-30 /tmp/run-before-replay
+cp -r artifacts/runs/run-2026-10-06 /tmp/run-before-replay
 cd skills/travel-expense-claim/scripts
-python3 build_run.py ../../../artifacts/runs/run-2026-09-30/sources.json
-python3 write_outputs.py ../../../artifacts/runs/run-2026-09-30/sources.json
+python3 build_run.py ../../../artifacts/runs/run-2026-10-06/sources.json
+python3 write_outputs.py ../../../artifacts/runs/run-2026-10-06/sources.json
 cd ../../..
-diff -rq /tmp/run-before-replay artifacts/runs/run-2026-09-30   # expect no output
+diff -rq /tmp/run-before-replay artifacts/runs/run-2026-10-06   # expect no output
+
+# Cross-run check: run-2026-10-06's claims.csv and work_queue.json groups
+# are identical to run-2026-09-30's (same obligations/money, per the rerun
+# rule) even though the two runs' sources.json/policy.md differ in
+# completeness -- see run-2026-10-06/report.md for the full explanation.
+diff artifacts/runs/run-2026-09-30/claims.csv artifacts/runs/run-2026-10-06/claims.csv   # expect no output
 ```
 
 What this run's verification actually covers (see `report.md`'s
@@ -123,8 +153,20 @@ claim attached (T122/TC122), cancellation with an already-dispatched request
 (C18/TC018), idempotent redelivery of the same activity record at a later
 batch (F-C01-1, TC122-confirmed), and replay. **Not exercised by this run's
 retained sources** (documented, not hard-coded around): a claim/permit
-landing at exactly the EUR 1,000.00 director-threshold boundary, and a
-multi-rate FX history for one currency.
+landing at exactly the EUR 1,000.00 director-threshold boundary, a
+multi-rate FX history for one currency, a source that fails to fetch, and a
+receipt category outside the 5 documented in POL-2026.2 -- the last two have
+dedicated code paths (see "Error / retry behavior" above) verified by
+disposable synthetic inputs, since none of the 5 real sources or 200 real
+claim lines ever hits them. Separately: no case anywhere in the retained
+policy, interview, or workbook was found where a business rule is
+genuinely undocumented by every source (the project brief's broader
+"missing rules -- escalate, don't guess" standing rule) -- policy.md turns
+out to define a rule for every case this data actually presents, including
+the unknown-category case above. If one ever arose, the existing free-form
+`issues[]`/`work_queue.json` shape (reason + owner + resolution_needed, no
+fixed enum) already carries a lead/facilitator-owned entry without any
+further code change.
 
 ## Handoff / support
 

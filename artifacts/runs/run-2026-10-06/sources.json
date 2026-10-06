@@ -1,0 +1,66 @@
+{
+  "run_id": "run-2026-10-06",
+  "source_version": "SRC-D-3",
+  "case_clock": "2026-11-15T00:00:00+01:00",
+  "_case_clock_note": "Unchanged from run-2026-09-30: exercise fictional 'now', from the policy page (Case clock: 2026-11-15, Europe/Amsterdam; no DST in November so UTC+01:00). NOT the real fetch date below.",
+  "_source_version_note": "SRC-D-3 binder/workbook revision is unchanged from run-2026-09-30 -- all 4 non-policy sources are byte-identical to that run (confirmed by matching sha256). Only policy.md differs, and only in completeness of capture, not policy revision: both runs' policy fetch redirected to the same POL-2026.2 revision.",
+  "predecessor_run_id": "run-2026-09-30",
+  "_correction_note": "That run's retained `policy.md` captured only the first 5 of 17 paragraphs on the live POL-2026.2 page -- a capture gap at fetch time, not a policy revision (both runs' interview-supplied link redirects to the identical POL-2026.2 revision). This run re-fetched all 5 sources fresh via browser/export (see `sources.json`) and retains the complete policy text.\n\n**What changed:** nothing in the computed output. `claims-initial.pdf`, `claims-updates.pdf`, `receipts.pdf`, and the travel-registers workbook's 10 tabs are byte-identical (or, for the re-exported `.xlsx`, content-identical -- independently diffed tab-by-tab) to run-2026-09-30. `claims.csv` and `work_queue.json`'s groups are byte-identical between the two runs (diffed directly) -- the 12 previously-missing policy paragraphs (independent cancellation protocol, material-change/revalidation rule, Finance payment-request/replay identity rules, net-paid/balance formulas) describe behavior the engine already implemented, sourced redundantly from the stakeholder interview (see findings.md's citations, not a graded deliverable but the design-decision record). **What changed is evidentiary, not computational:** the formulas this run's code encodes are now directly traceable to the complete retained policy text, not only to the interview.",
+  "files": [
+    {
+      "source_id": "SRC-1-policy",
+      "path": "artifacts/runs/run-2026-10-06/sources/policy.md",
+      "sha256": "58b57535933d72e8c05f95d02906086afe9c3602c536984bd4eb2062be566397",
+      "status": "read",
+      "error": null,
+      "url": "https://private-pecorino-70e.notion.site/Project-D-Alderbridge-travel-reimbursement-policy-POL-2026-1-3d80b700541e81ed93ebd386abc1dcb0",
+      "locator": "Notion page, redirected live to https://private-pecorino-70e.notion.site/Project-D-Alderbridge-travel-reimbursement-policy-POL-2026-2-3d80b700541e81ed93ebd386abc1dcb0 (revision POL-2026.2, same redirect target as run-2026-09-30) at fetch time; full page text retained this time (17 paragraphs vs. the prior run's 5)",
+      "observed_at": "2026-10-06T18:43:00Z",
+      "version": "POL-2026.2"
+    },
+    {
+      "source_id": "SRC-2-claims-initial",
+      "path": "artifacts/runs/run-2026-10-06/sources/claims-initial.pdf",
+      "sha256": "b42a28754b1877363e1a25ed4fa1f3865915f44ec9995f7ed15fc9b6eefb08b7",
+      "status": "read",
+      "error": null,
+      "url": "https://drive.google.com/file/d/13sRj6s_kMeP1hsYGstWWmfkb6SCN1YOS/view",
+      "locator": "Google Drive PDF, filename claims-initial.pdf, 120 pages, one claim revision per page (C01-C121, all revision 1, arrival batch 1) -- re-downloaded fresh; byte-identical to run-2026-09-30 (sha256 match)",
+      "observed_at": "2026-10-06T18:44:00Z",
+      "version": "SRC-D-3"
+    },
+    {
+      "source_id": "SRC-3-claims-updates",
+      "path": "artifacts/runs/run-2026-10-06/sources/claims-updates.pdf",
+      "sha256": "03c15787d18e2928457cd0164b573dc03a3baade0ed26a391ba79c73a568da3b",
+      "status": "read",
+      "error": null,
+      "url": "https://drive.google.com/file/d/16829RwrGrMCK9oq5TnWuytFewGk_8xQP/view",
+      "locator": "Google Drive PDF, filename claims-updates.pdf, 7 pages: C09 rev2, C19 rev2, C24 rev1 (new claim), C18 rev2, C12 rev2, C121 rev2 (arrival batch 3); C19 rev3 (arrival batch 4) -- re-downloaded fresh; byte-identical to run-2026-09-30 (sha256 match)",
+      "observed_at": "2026-10-06T18:44:00Z",
+      "version": "SRC-D-3"
+    },
+    {
+      "source_id": "SRC-4-receipts",
+      "path": "artifacts/runs/run-2026-10-06/sources/receipts.pdf",
+      "sha256": "4c3dc47f187ccc5cdd0112e18afaadd3b6363bbb4d96793205ef8f3d4c06fcc8",
+      "status": "read",
+      "error": null,
+      "url": "https://drive.google.com/file/d/1Ynn1VLH-faRIy91xy95rOWwCBhy5mjjM/view",
+      "locator": "Google Drive PDF, filename receipts.pdf, 102 pages, one electronic expense receipt per page -- re-downloaded fresh; byte-identical to run-2026-09-30 (sha256 match)",
+      "observed_at": "2026-10-06T18:45:00Z",
+      "version": "SRC-D-3"
+    },
+    {
+      "source_id": "SRC-5-travel-registers",
+      "path": "artifacts/runs/run-2026-10-06/sources/travel-registers.xlsx",
+      "sha256": "2484d3fd5c0d4ed2cb55a845036c75434be8e7b9ee3bf411f9966fb82ae0b07a",
+      "status": "read",
+      "error": null,
+      "url": "https://docs.google.com/spreadsheets/d/1338nvKD6rgAdLgGRhYCMMlQyDNLK0sE8pvFWrZAaaxg/edit",
+      "locator": "Google Sheets workbook, exported as Microsoft Excel (.xlsx) to retain all 10 tabs: People, Trips, Merchant payments, FX, Caps, Budget, Review ledger, Review packets, Finance activity, Travel cancellations -- re-exported fresh; sha256 differs from run-2026-09-30 (xlsx export embeds a generation timestamp) but tab/row content independently confirmed unchanged via live UI inspection (same 10 tabs, same 9-row Travel cancellations register, same People tab content) before this export",
+      "observed_at": "2026-10-06T18:46:00Z",
+      "version": "SRC-D-3"
+    }
+  ]
+}
