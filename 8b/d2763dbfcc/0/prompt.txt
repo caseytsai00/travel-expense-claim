@@ -1,0 +1,40 @@
+<cross-session-message from="uds:/tmp/cc-socks/61159.sock" from-name="caseytsai-12" from-mode="prompting">
+We're redoing Project D (Travel Expense Claim) for Catalyte, repo travel-expense-claim. You should already be running with cwd at the worktree .claude/worktrees/project-d-redo — please confirm that first with `pwd` and `git rev-parse --show-toplevel` before anything else.
+
+Step 1 — BEFORE touching any files, verify entire.io capture is actually live for this session:
+1. Run `entire session current` and `entire session list`
+2. Send the user a message asking them to reply with anything, then check `.entire/logs/entire.log` for a new line from that event
+3. Check `git log --oneline entire/checkpoints/v1` for a new checkpoint after real work happens
+
+Do not proceed to step 2 until capture is confirmed live. If it's not firing, read progress.md in this worktree (gitignored, still on disk) — it documents the exact failure mode (hooks only load at SessionStart) and how it was fixed before. If this worktree's .claude/settings.json is present but capture still isn't firing, tell the user and figure out why rather than guessing.
+
+Step 2 — once capture is confirmed live, re-walk through this redo's key findings and design decisions OUT LOUD in the conversation (they need to be in the captured transcript, not just in file diffs):
+
+1. The retained artifacts/runs/run-2026-09-30/sources/policy.md only captured 5 of the policy page's 17 real paragraphs — a live re-fetch (already done, files on disk) found the complete text and confirmed the other 4 sources are unchanged. Explain why this matters and what's being done about it.
+2. Two real code gaps were found and fixed (already done, see git diff): parse_sources.py now hard-stops before sealing any batch if a source isn't status "read" (previously would crash instead of failing cleanly); engine.py now gives an explicit "unknown_category" path for receipt categories outside the 5 POL-2026.2 documents (previously fell through to a vague generic message). Walk through why each was needed and why the owner/framing choices were made the way they were (note: an earlier version of the category fix wrongly routed it to a fabricated "LEAD-01 escalation" not grounded in the actual policy text, which says unknown category is just unresolved like any other evidence gap — that was caught and reverted; explain why that correction mattered).
+3. A new run (run-2026-10-06) was built from genuinely fresh re-fetched sources, properly linked to run-2026-09-30 as predecessor in its report.md. claims.csv and work_queue.json are byte-identical between the two runs — explain why that's the correct outcome (evidentiary fix, not a computational one) rather than something to be suspicious of.
+
+Step 3 — after that's captured, do a final review pass (git status, git diff, rerun the Verify commands in README.md, confirm nothing in the Downloads-folder re-fetch workflow leaked unintended files), then ask the user before committing or pushing anything.
+
+The user's memory file project_fellowship_project_d.md (in the main Claude session, not this worktree) has full background if anything here is unclear — ask the user to relay specifics if you need them, since you won't have direct access to that file from this session.
+</cross-session-message>
+
+---
+
+ok
+
+---
+
+ok
+
+---
+
+<cross-session-message from="uds:/tmp/cc-socks/61159.sock" from-name="caseytsai-12" from-mode="prompting">
+On the Verify-destroys-report.md finding: don't leave this as "remember to manually restore after Verify" — fix it properly before committing, since the whole point of this redo is closing exactly this kind of gap between documentation and what the tooling actually produces.
+
+Preferred fix: make write_outputs.py regeneration-safe for that section. Either (a) have it read any existing predecessor-link/correction section out of the current report.md before overwriting and re-emit it, or better, (b) generate that section from run metadata directly (e.g. a predecessor_run field already present in the run) rather than treating it as hand-written prose that gets clobbered. Option (a) is the minimal patch; option (b) is more robust long-term since it removes the hand-maintained text entirely.
+
+Weaker fallback, not preferred: just document the gotcha in README as a known limitation. That leaves a trap for the next person who runs Verify, so only fall back to this if (b)/(a) turn out to be more invasive than they're worth.
+
+Go ahead and implement whichever of these you think is right, verify it (rerun the Verify commands again, confirm the section survives this time), then come back to the user before committing/pushing as already instructed.
+</cross-session-message>

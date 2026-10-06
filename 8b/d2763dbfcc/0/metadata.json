@@ -1,0 +1,117 @@
+{
+  "cli_version": "0.10.2",
+  "checkpoint_id": "8bd2763dbfcc",
+  "session_id": "c08b82db-f9ea-4059-b2d6-da82bb89415b",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-06T21:50:14.058187Z",
+  "branch": "worktree-project-d-redo",
+  "checkpoints_count": 3,
+  "save_step_count": 3,
+  "files_touched": [
+    "README.md",
+    "artifacts/runs/run-2026-10-06/report.md",
+    "artifacts/runs/run-2026-10-06/sources.json",
+    "skills/travel-expense-claim/SKILL.md",
+    "skills/travel-expense-claim/scripts/build_run.py",
+    "skills/travel-expense-claim/scripts/engine.py",
+    "skills/travel-expense-claim/scripts/parse_sources.py",
+    "skills/travel-expense-claim/scripts/policy_rules.py",
+    "skills/travel-expense-claim/scripts/write_outputs.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "d820f9b09269",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 86,
+    "cache_creation_tokens": 90605,
+    "cache_read_tokens": 4053130,
+    "output_tokens": 30284,
+    "api_call_count": 43
+  },
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-06T21:50:14.03846Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 13,
+    "human_removed": 60,
+    "total_committed": 8,
+    "total_lines_changed": 73,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 36237,
+      "user_lines_removed": 24,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "README.md": 54,
+        "artifacts/runs/run-2026-10-06/batches/batch-1.json": 6184,
+        "artifacts/runs/run-2026-10-06/batches/batch-2.json": 6945,
+        "artifacts/runs/run-2026-10-06/batches/batch-3.json": 7073,
+        "artifacts/runs/run-2026-10-06/batches/batch-4.json": 7089,
+        "artifacts/runs/run-2026-10-06/claims.csv": 122,
+        "artifacts/runs/run-2026-10-06/report.md": 91,
+        "artifacts/runs/run-2026-10-06/sources.json": 65,
+        "artifacts/runs/run-2026-10-06/sources/claims-initial.pdf": 3072,
+        "artifacts/runs/run-2026-10-06/sources/claims-updates.pdf": 236,
+        "artifacts/runs/run-2026-10-06/sources/policy.md": 48,
+        "artifacts/runs/run-2026-10-06/sources/receipts.pdf": 3227,
+        "artifacts/runs/run-2026-10-06/work_queue.json": 1954,
+        "skills/travel-expense-claim/SKILL.md": 15,
+        "skills/travel-expense-claim/scripts/build_run.py": 12,
+        "skills/travel-expense-claim/scripts/engine.py": 14,
+        "skills/travel-expense-claim/scripts/parse_sources.py": 15,
+        "skills/travel-expense-claim/scripts/policy_rules.py": 9,
+        "skills/travel-expense-claim/scripts/write_outputs.py": 12
+      },
+      "user_removed_per_file": {
+        "README.md": 12,
+        "skills/travel-expense-claim/SKILL.md": 6,
+        "skills/travel-expense-claim/scripts/build_run.py": 6
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 36237,
+      "agent_lines_removed": 24
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 36237,
+      "agent_lines_removed": 24
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 10,
+      "user_lines_removed": 28,
+      "agent_lines_added": 36248,
+      "agent_lines_removed": 24,
+      "user_added_per_file": {
+        "artifacts/runs/run-2026-10-06/batches/batch-1.json": 1,
+        "artifacts/runs/run-2026-10-06/batches/batch-2.json": 2,
+        "artifacts/runs/run-2026-10-06/batches/batch-3.json": 2,
+        "artifacts/runs/run-2026-10-06/batches/batch-4.json": 2,
+        "artifacts/runs/run-2026-10-06/report.md": 3
+      },
+      "user_removed_per_file": {
+        "artifacts/runs/run-2026-10-06/batches/batch-1.json": 1,
+        "artifacts/runs/run-2026-10-06/batches/batch-2.json": 2,
+        "artifacts/runs/run-2026-10-06/batches/batch-3.json": 2,
+        "artifacts/runs/run-2026-10-06/batches/batch-4.json": 2,
+        "artifacts/runs/run-2026-10-06/report.md": 21
+      }
+    }
+  ]
+}
