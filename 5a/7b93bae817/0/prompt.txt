@@ -1,0 +1,29 @@
+Is entire.io capture live in this session?
+
+---
+
+Can you pull up the history and financials for claim c18?
+
+---
+
+Pull up the record for claim 02
+
+---
+
+C18 should be categorized on its own because in that instance, it needs a different response from the others. The response needed is to resolve finance's contradicting facts caused by the revision submitted by the employee. This conflict is not present in the other 88 claims. How would you implement the split?
+
+---
+
+Does any of the other 88 claims have a legitimate reason to go cancelled → settled that isn't actually a conflict? I want to make sure this won't create false positives elsewhere
+
+---
+
+Great, let's implement
+
+---
+
+Leave it as is and don't regenerate because doing so will destroy the historical record while policy requires old versions to be kept.
+
+---
+
+rerun the README's verify commands
