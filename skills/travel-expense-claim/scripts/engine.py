@@ -190,6 +190,11 @@ FINANCE_STATUS_MAP = {
     "resolution": "settled",
 }
 
+# A request's own activity log reaching one of these and later reaching the
+# other is a direct contradiction in Finance's own record (see
+# derive_request's sequence_conflict), not a claim-side evidence/review gap.
+TERMINAL_STATUSES = ("settled", "cancelled")
+
 
 def derive_request(finance_rows_for_claim, as_of_batch, claim_id, currency, payee):
     candidates = sorted(
@@ -216,11 +221,32 @@ def derive_request(finance_rows_for_claim, as_of_batch, claim_id, currency, paye
     settled_cents = 0
     refunded_cents = 0
     decision_ids = []
+    # Surface a terminal-status regression instead of letting "last write
+    # wins" silently paper over it (policy.md: "A correction or cancellation
+    # that occurs after Finance has accepted or dispatched the affected
+    # reimbursement request requires explicit Finance resolution before
+    # closure").
+    terminal_seen = None  # (status, activity_time)
+    sequence_conflict = None
     for r in rows:
         decision_ids.append(r["Activity reference"])
         atype = r["Activity type"]
         mapped = FINANCE_STATUS_MAP.get(atype)
         if mapped:
+            if mapped in TERMINAL_STATUSES:
+                if (
+                    sequence_conflict is None
+                    and terminal_seen is not None
+                    and terminal_seen[0] != mapped
+                ):
+                    sequence_conflict = {
+                        "request_id": request_id,
+                        "from_status": terminal_seen[0],
+                        "from_at": terminal_seen[1],
+                        "to_status": mapped,
+                        "to_at": r["Activity time (UTC)"],
+                    }
+                terminal_seen = (mapped, r["Activity time (UTC)"])
             status = mapped
         if r["Obligation (EUR)"] not in (None, ""):
             obligation_cents = pr.round_half_up_cents(Decimal(str(r["Obligation (EUR)"])))
@@ -242,4 +268,5 @@ def derive_request(finance_rows_for_claim, as_of_batch, claim_id, currency, paye
         "decision_ids": decision_ids,
         "net_paid_cents": net_paid_cents,
         "activity_rows": rows,
+        "sequence_conflict": sequence_conflict,
     }

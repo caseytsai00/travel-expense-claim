@@ -44,6 +44,7 @@ def write_claims_csv(final_snapshot, run_dir):
 
 MISSING_FACT_GROUPS = [
     ("unknown_category", "Unknown category"),
+    ("finance_sequence_conflict", "Finance's own activity log for"),
     ("payment_anomaly", "Finance recorded"),
     ("missing_receipt", "No receipt on file for"),
     ("missing_merchant_proof", "No settled merchant payment proof for"),
@@ -80,7 +81,11 @@ def build_work_queue(final_snapshot):
     for issue in final_snapshot["issues"]:
         record_id = issue["record_id"]
         fact_type = classify_reason(issue["reason"])
-        if record_id.endswith("-payment-anomaly"):
+        if record_id.endswith("-finance-conflict"):
+            subject_id = record_id[: -len("-finance-conflict")]
+            subject_type = "claim"
+            revision = claims_by_id.get(subject_id, {}).get("revision")
+        elif record_id.endswith("-payment-anomaly"):
             subject_id = record_id[: -len("-payment-anomaly")]
             subject_type = "claim"
             revision = claims_by_id.get(subject_id, {}).get("revision")
@@ -178,11 +183,23 @@ def write_report(run_id, batches, final_snapshot, wq, run_dir, sources_manifest)
         elif prev is None:
             changes.append((c["claim_id"], "(not yet arrived)", c["status"]))
 
-    payment_anomalies = [i for i in final_snapshot["issues"] if i["record_id"].endswith("-payment-anomaly")]
+    finance_conflicts = [i for i in final_snapshot["issues"] if i["record_id"].endswith("-finance-conflict")]
+    conflict_claim_ids = {i["record_id"][: -len("-finance-conflict")] for i in finance_conflicts}
+
+    payment_anomalies = [
+        i for i in final_snapshot["issues"]
+        if i["record_id"].endswith("-payment-anomaly")
+        and i["record_id"][: -len("-payment-anomaly")] not in conflict_claim_ids
+    ]
     anomaly_total_cents = sum(
         c["paid_cents"]
         for c in claims
-        if c["status"] in ("held", "pending", "rejected") and c["paid_cents"]
+        if c["status"] in ("held", "pending", "rejected")
+        and c["paid_cents"]
+        and c["claim_id"] not in conflict_claim_ids
+    )
+    conflict_total_cents = sum(
+        c["paid_cents"] for c in claims if c["claim_id"] in conflict_claim_ids
     )
 
     lines = []
@@ -209,6 +226,19 @@ def write_report(run_id, batches, final_snapshot, wq, run_dir, sources_manifest)
             "POL-2026.2 documents. Per policy's own wording (\"An unknown category ... is "
             "unresolved, never an assumed zero\"), these are held, not guessed at -- see the "
             "`unknown_category` group in `work_queue.json`."
+        )
+        lines.append("")
+
+    if finance_conflicts:
+        lines.append("## ⚠ Lead finding: Finance's own ledger contradicts itself\n")
+        lines.append(
+            f"**{len(finance_conflicts)} claim(s)** have a request where Finance's own activity log "
+            f"reaches one terminal status (settled or cancelled) and later reaches the *other* one for "
+            f"the same request -- net **{money(conflict_total_cents)}** paid against request(s) Finance "
+            "had already marked cancelled. This is not a claim-side evidence or review gap (no amount of "
+            "missing receipts or pending sign-off explains it) and it will not self-resolve as evidence "
+            "arrives -- Finance/administration must determine which fact is authoritative before the "
+            "revision can close. See the `finance_sequence_conflict` group in `work_queue.json`."
         )
         lines.append("")
 
@@ -277,7 +307,13 @@ def write_report(run_id, batches, final_snapshot, wq, run_dir, sources_manifest)
         "administration/budget_owner/supervisor review** in the retained sources, so it sits "
         "`pending` even though its original revision was fully approved -- this is the direct "
         "consequence of Decision #2 (every revision, including a trip swap, requires full "
-        "re-review, no carry-forward of a prior revision's approval)."
+        "re-review, no carry-forward of a prior revision's approval). Separately, and not "
+        "resolved by that review arriving: Finance's own activity log for REQ-C18 shows "
+        "'cancelled' and then 'settled' for the same request, triggered by the trip reassignment "
+        "landing while the cancellation was in flight -- tracked as its own "
+        "`finance_sequence_conflict` item (distinct from the ordinary missing-receipt/awaiting-"
+        "review anomalies above), since only Finance/administration can say which fact is "
+        "authoritative."
     )
     lines.append("")
 

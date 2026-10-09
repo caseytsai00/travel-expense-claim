@@ -425,7 +425,31 @@ def compute_batch_snapshot(
                 }
             )
 
-        if status in ("held", "pending", "rejected") and paid_cents != 0:
+        sequence_conflict = request["sequence_conflict"] if request is not None else None
+
+        if sequence_conflict is not None:
+            # Finance's own activity log for this request reached one terminal
+            # status (e.g. cancelled) and later reached the other (e.g.
+            # settled) -- a direct contradiction in Finance's own record, not
+            # a claim-side evidence/review gap. No amount of evidence arriving
+            # resolves this; only Finance/administration can say which fact is
+            # authoritative, so it gets its own record distinct from the
+            # ordinary payment-anomaly case below.
+            issues.append(
+                {
+                    "record_id": f"{claim_id}-finance-conflict",
+                    "reason": (
+                        f"Finance's own activity log for {sequence_conflict['request_id']} shows "
+                        f"'{sequence_conflict['from_status']}' at {sequence_conflict['from_at']} "
+                        f"then '{sequence_conflict['to_status']}' at {sequence_conflict['to_at']} "
+                        f"for the same request -- following claim {claim_id}'s revision {rev['revision']} "
+                        f"({reason})"
+                    ),
+                    "owner": "FIN-01",
+                    "resolution_needed": "Finance/administration must determine which fact is authoritative (e.g. void the cancellation, or reverse the settlement) before this revision can close -- this is not resolved by evidence arriving",
+                }
+            )
+        elif status in ("held", "pending", "rejected") and paid_cents != 0:
             # Finance moved real money against a revision that is not fully
             # reviewed/resolved on the retained sources -- a compliance
             # anomaly to surface explicitly, never to smooth over by hiding

@@ -6024,10 +6024,10 @@
       "resolution_needed": "Awaiting review from: administration, budget_owner, supervisor"
     },
     {
-      "record_id": "C18-payment-anomaly",
-      "reason": "Finance recorded 10000 EUR-cents net paid against C18 revision 2, but that revision is currently 'pending' (not closed-reimbursed) -- Awaiting review from: administration, budget_owner, supervisor",
+      "record_id": "C18-finance-conflict",
+      "reason": "Finance's own activity log for REQ-C18 shows 'cancelled' at 2026-09-13 12:00:00 then 'settled' at 2026-09-14 12:00:00 for the same request -- following claim C18's revision 2 (Awaiting review from: administration, budget_owner, supervisor)",
       "owner": "FIN-01",
-      "resolution_needed": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment"
+      "resolution_needed": "Finance/administration must determine which fact is authoritative (e.g. void the cancellation, or reverse the settlement) before this revision can close -- this is not resolved by evidence arriving"
     },
     {
       "record_id": "C20",

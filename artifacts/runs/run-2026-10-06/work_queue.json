@@ -956,16 +956,6 @@
       },
       {
         "subject_type": "claim",
-        "subject_id": "C18",
-        "revision": 2,
-        "missing_fact_or_reason": "Finance recorded 10000 EUR-cents net paid against C18 revision 2, but that revision is currently 'pending' (not closed-reimbursed) -- Awaiting review from: administration, budget_owner, supervisor",
-        "fact_type": "payment_anomaly",
-        "owner": "FIN-01",
-        "next_action": "Finance/administration to confirm whether the payment is valid against this revision's actual approvals/evidence, or requires recovery/adjustment",
-        "source_batch": "batch-4"
-      },
-      {
-        "subject_type": "claim",
         "subject_id": "C20",
         "revision": 1,
         "missing_fact_or_reason": "Finance recorded 10000 EUR-cents net paid against C20 revision 1, but that revision is currently 'held' (not closed-reimbursed) -- No receipt on file for COST-20",
@@ -1934,6 +1924,18 @@
         "fact_type": "awaiting_initial_review",
         "owner": "administration",
         "next_action": "Awaiting review from: administration, budget_owner, supervisor",
+        "source_batch": "batch-4"
+      }
+    ],
+    "finance_sequence_conflict": [
+      {
+        "subject_type": "claim",
+        "subject_id": "C18",
+        "revision": 2,
+        "missing_fact_or_reason": "Finance's own activity log for REQ-C18 shows 'cancelled' at 2026-09-13 12:00:00 then 'settled' at 2026-09-14 12:00:00 for the same request -- following claim C18's revision 2 (Awaiting review from: administration, budget_owner, supervisor)",
+        "fact_type": "finance_sequence_conflict",
+        "owner": "FIN-01",
+        "next_action": "Finance/administration must determine which fact is authoritative (e.g. void the cancellation, or reverse the settlement) before this revision can close -- this is not resolved by evidence arriving",
         "source_batch": "batch-4"
       }
     ],
