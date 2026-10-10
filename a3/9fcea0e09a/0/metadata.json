@@ -1,0 +1,58 @@
+{
+  "cli_version": "0.10.2",
+  "checkpoint_id": "a39fcea0e09a",
+  "session_id": "307780e5-b2b7-4de4-bb9f-bf4aa67073e8",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T04:42:12.166237Z",
+  "branch": "worktree-project-d-redo",
+  "checkpoints_count": 6,
+  "save_step_count": 1,
+  "files_touched": [
+    "skills/travel-expense-claim/scripts/build_run.py",
+    "skills/travel-expense-claim/scripts/engine.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "a4f529b13bff",
+  "checkpoint_transcript_start": 595,
+  "transcript_lines_at_start": 595,
+  "compact_transcript_start": 117,
+  "token_usage": {
+    "input_tokens": 64,
+    "cache_creation_tokens": 186352,
+    "cache_read_tokens": 6534994,
+    "output_tokens": 19218,
+    "api_call_count": 32
+  },
+  "session_metrics": {
+    "turn_count": 14
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T04:42:12.123729Z",
+    "agent_lines": 29,
+    "agent_removed": 6,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 29,
+    "total_lines_changed": 35,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 29,
+      "agent_lines_removed": 6
+    }
+  ]
+}

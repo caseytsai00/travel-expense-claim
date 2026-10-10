@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.10.2",
+  "checkpoint_id": "a39fcea0e09a",
+  "strategy": "manual-commit",
+  "branch": "worktree-project-d-redo",
+  "checkpoints_count": 6,
+  "files_touched": [
+    "skills/travel-expense-claim/scripts/build_run.py",
+    "skills/travel-expense-claim/scripts/engine.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/a3/9fcea0e09a/0/metadata.json",
+      "transcript": "/a3/9fcea0e09a/0/full.jsonl",
+      "compact_transcript": "/a3/9fcea0e09a/0/transcript.jsonl",
+      "content_hash": "/a3/9fcea0e09a/0/content_hash.txt",
+      "prompt": "/a3/9fcea0e09a/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 64,
+    "cache_creation_tokens": 186352,
+    "cache_read_tokens": 6534994,
+    "output_tokens": 19218,
+    "api_call_count": 32
+  }
+}

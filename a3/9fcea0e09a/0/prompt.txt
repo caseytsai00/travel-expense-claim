@@ -1,0 +1,17 @@
+Go ahead and push
+
+---
+
+Can you pull the submission dates for C03 and C24's COST-03 from the retained sources?
+
+---
+
+The cost line's first submitted date should be what determines which claim comes first. If we keep relying on claim_id, then a lower id number claim with a later submitted date will be placed in front of a higher id number claim with an earlier submitted date.Even though in this instance, (the lower id claim was correctly placed in front of the higher id claim), it was purely a coincidence that worked because the former had a submitted date earlier than the latter.
+
+---
+
+Does the new pre-pass still only flag a cost as "contested" when it's claimed by different claim_ids and not  when the same claim shows the same cost across its own multiple revisions? I want to make sure the rewrite preserves it rather than accidentally treating a claim's own revision history as self-conflicting.
+
+---
+
+Go ahead and implement
