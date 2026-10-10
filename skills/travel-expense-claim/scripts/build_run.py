@@ -229,12 +229,34 @@ def compute_batch_snapshot(
     claims_out = []
     requests_out = []
     admitted_event_ids = set()
-    seen_cost_owner = {}
 
     # Process claims in a stable, deterministic order (claim_id sorted numerically).
     def claim_sort_key(cid):
         digits = "".join(ch for ch in cid if ch.isdigit())
         return (int(digits) if digits else 0, cid)
+
+    # Duplicate-cost ownership pre-pass: when the same cost_id is claimed
+    # under more than one DIFFERENT claim_id, the true first claimant is
+    # whichever line's own "first submitted date" is earliest (policy.md:
+    # "A later final claim may contain a previously prepaid cost; link and
+    # exclude..." -- "previously prepaid" is a chronological fact, not a
+    # claim-ID ordering). Keyed by claim_id per cost_id so a single claim's
+    # own revision history (current_revision() below returns exactly one
+    # revision per claim per batch) can never register as self-contested --
+    # only >1 distinct claim_id counts. Ties (e.g. COST-03 under C03 and
+    # C24, both dated 2026-09-01) fall back to claim_id order, matching
+    # today's behavior exactly when there is no date to break the tie with.
+    cost_claimants = {}
+    for claim_id in sorted(claims_by_id.keys(), key=claim_sort_key):
+        rev_for_cost = current_revision(claims_by_id[claim_id], batch_no)
+        if rev_for_cost is None:
+            continue
+        for line in rev_for_cost["lines"]:
+            cost_claimants.setdefault(line["cost_id"], {})[claim_id] = line["first_submitted_date"]
+    cost_owner = {
+        cost_id: min(by_claim.items(), key=lambda kv: (kv[1], claim_sort_key(kv[0])))[0]
+        for cost_id, by_claim in cost_claimants.items()
+    }
 
     for claim_id in sorted(claims_by_id.keys(), key=claim_sort_key):
         revs = claims_by_id[claim_id]
@@ -275,7 +297,7 @@ def compute_batch_snapshot(
                 caps_rows,
                 fx_rows,
                 exceptions_by_cost,
-                seen_cost_owner,
+                cost_owner,
                 trip_late,
                 permit_gate,
                 cancellation_gate,

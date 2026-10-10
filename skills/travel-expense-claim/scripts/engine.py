@@ -49,7 +49,7 @@ def resolve_claim_line(
     caps_rows,
     fx_rows,
     exceptions_by_cost,
-    seen_cost_owner,
+    cost_owner,
     trip_late_filing,
     permit_gate,
     cancellation_gate,
@@ -59,8 +59,10 @@ def resolve_claim_line(
     claim_id = claim_rec["claim_id"]
     source_ids = [claim_rec["source_id"]]
 
-    # Duplicate cost across DIFFERENT claims: first claimant owns it.
-    owner = seen_cost_owner.get(cost_id)
+    # Duplicate cost across DIFFERENT claims: the earliest first_submitted_date
+    # owns it (precomputed in build_run.py's cost_claimants/cost_owner
+    # pre-pass -- not iteration order).
+    owner = cost_owner.get(cost_id)
     if owner is not None and owner != claim_id:
         return (
             "excluded",
@@ -68,7 +70,6 @@ def resolve_claim_line(
             f"Cost {cost_id} already claimed under {owner}; excluded here to avoid double payment",
             source_ids,
         )
-    seen_cost_owner.setdefault(cost_id, claim_id)
 
     receipt = _find_receipt(receipts_by_cost, cost_id)
     if receipt is None:
